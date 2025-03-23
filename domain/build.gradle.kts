@@ -33,10 +33,9 @@ android {
 }
 
 dependencies {
-    //module dependencies
-    implementation(project(":core"))
 
-
+    //Gson
+    implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

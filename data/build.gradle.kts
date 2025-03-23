@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlinAndroidKsp)
+    alias(libs.plugins.hiltAndroid)
 }
 
 android {
@@ -36,6 +38,20 @@ dependencies {
     //module dependencies
     implementation(project(":core"))
     implementation(project(":domain"))
+
+    //hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+
+    //Gson
+    implementation(libs.gson)
+
+    // view model scope for suspend function
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
+    //Retrofit and Gson converter
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
