@@ -1,4 +1,4 @@
-package com.example.core.theme
+package com.example.virginmoney.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -15,7 +15,7 @@ val provider = GoogleFont.Provider(
     certificates = R.array.com_google_android_gms_fonts_certs
 )
 
-val fontName = GoogleFont("Roboto") // Replace with your desired font name
+val fontName = GoogleFont("Roboto")
 
 val fontFamily = FontFamily(
     Font(googleFont = fontName, fontProvider = provider)

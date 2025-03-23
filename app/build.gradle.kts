@@ -47,6 +47,9 @@ dependencies {
     implementation(project(":feature_people"))
     implementation(project(":feature_rooms"))
 
+    //google fonts
+    implementation(libs.androidx.ui.text.google.fonts)
+
     //other dependencies
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

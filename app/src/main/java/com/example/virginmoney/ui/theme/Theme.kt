@@ -1,4 +1,4 @@
-package com.example.core.theme
+package com.example.virginmoney.ui.theme
 
 
 import android.os.Build
@@ -15,14 +15,14 @@ private val DarkColorScheme = darkColorScheme(
     primary = PrimaryColor,
     secondary = SecondaryColor,
     tertiary = TertiaryColor,
-    background = BackgroundWhite
+    surface = BackgroundWhite
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = PrimaryColor,
     secondary = SecondaryColor,
     tertiary = TertiaryColor,
-    background = BackgroundWhite
+    surface = BackgroundWhite
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -58,3 +58,4 @@ fun VirginMoneyTheme(
         content = content
     )
 }
+

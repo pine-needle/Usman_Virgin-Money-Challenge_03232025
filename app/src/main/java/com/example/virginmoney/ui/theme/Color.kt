@@ -1,6 +1,7 @@
-package com.example.core.theme
+package com.example.virginmoney.ui.theme
 
 import androidx.compose.ui.graphics.Color
+
 
 val PrimaryColor = Color(0xFFC40202)
 val SecondaryColor = Color(0xFFA6AAB4)
