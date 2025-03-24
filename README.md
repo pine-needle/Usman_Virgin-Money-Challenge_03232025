@@ -48,10 +48,7 @@ The app follows a clean architecture approach with a multi-module setup to promo
 
 ## Code Structure
 
-The project is structured into multiple modules:
-
-## Code Structure
-
+<pre>
 app/
 ├── build.gradle.kts
 ├── src/
@@ -78,6 +75,8 @@ feature_people/
 feature_room/
 ├── build.gradle.kts
 ├── src/main/java/...
+</pre>
+
 
 
 ## Testing
@@ -140,9 +139,9 @@ The application addresses the development story requirements as follows:
 
 ## Screenshots
 
-![Screenshot 2](screenshots/Colleague List.png)
+![Screenshot 2](screenshots/ColleagueList.png)
 
-![Screenshot 1](screenshots/Available Rooms.png)
+![Screenshot 1](screenshots/AvailableRooms.png)
 
 
 ## Contact
