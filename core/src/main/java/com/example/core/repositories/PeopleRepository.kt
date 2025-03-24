@@ -1,11 +1,11 @@
-package com.example.domain.repositories
+package com.example.core.repositories
 
 
+import com.example.core.utils.UiStatus
 import com.example.domain.models.people.VMPeopleResponseItemModel
-import com.example.domain.utils.UiStatus
 import kotlinx.coroutines.flow.Flow
 
-interface GetPeopleUseCase {
+interface PeopleRepository {
     //get people data
     suspend fun getPeopleData() : Flow<UiStatus<ArrayList<VMPeopleResponseItemModel>>>
 }

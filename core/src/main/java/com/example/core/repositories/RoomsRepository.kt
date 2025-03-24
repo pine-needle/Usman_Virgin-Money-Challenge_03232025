@@ -1,11 +1,11 @@
-package com.example.domain.repositories
+package com.example.core.repositories
 
 
+import com.example.core.utils.UiStatus
 import com.example.domain.models.rooms.VMRoomsResponseItemModel
-import com.example.domain.utils.UiStatus
 import kotlinx.coroutines.flow.Flow
 
-interface GetRoomsUseCase {
+interface RoomsRepository {
     //get rooms data
     suspend fun getRoomsData() : Flow<UiStatus<ArrayList<VMRoomsResponseItemModel>>>
 }

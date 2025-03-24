@@ -41,8 +41,13 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
-    // view model scope for suspend function
+    // view model
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
+    //Retrofit and Gson converter
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+
     //Hilt navigation
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.core.ktx)

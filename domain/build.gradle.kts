@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlinAndroidKsp)
+    alias(libs.plugins.hiltAndroid)
 }
 
 android {
@@ -34,7 +36,14 @@ android {
 
 dependencies {
 
+    //hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
     //Gson
+
+    //Retrofit and Gson converter
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
     implementation(libs.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

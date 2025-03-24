@@ -52,13 +52,22 @@ dependencies {
     //google fonts
     implementation(libs.androidx.ui.text.google.fonts)
 
-
     //hilt
     implementation(libs.hilt.android)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.material3.android)
     ksp(libs.hilt.compiler)
+    
+    //hilt navigation
+    implementation (libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.material)
 
-    //Hilt navigation
-    //implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.material.icons.core)
+    implementation(libs.androidx.material.icons.extended)
+
+    // view model scope for suspend function
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
 
     //other dependencies
     implementation(libs.androidx.core.ktx)
@@ -68,7 +77,6 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,4 +1,4 @@
-package com.example.data.api
+package com.example.core.api
 
 object ApiReference {
     //The api endpoints

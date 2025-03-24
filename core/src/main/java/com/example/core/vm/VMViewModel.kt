@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.models.people.VMPeopleResponseItemModel
 import com.example.domain.models.rooms.VMRoomsResponseItemModel
-import com.example.domain.utils.UiStatus
-import com.example.domain.repositories.GetPeopleUseCase
-import com.example.domain.repositories.GetRoomsUseCase
+import com.example.core.usecases.GetPeopleUseCase
+import com.example.core.usecases.GetRoomsUseCase
+import com.example.core.utils.UiStatus
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -37,16 +37,16 @@ class VMViewModel @Inject constructor(
 
     private fun fetchPeopleData() {
         viewModelScope.launch(dispatcher) {
-            getPeopleUseCase.getPeopleData().collect { result ->
-                _peopleData.value = result
+            getPeopleUseCase.getPeopleData().collect {
+                _peopleData.value = it
             }
         }
     }
 
     private fun fetchRoomsData() {
         viewModelScope.launch(dispatcher) {
-            getRoomsUseCase.getRoomsData().collect { result ->
-                _roomsData.value = result
+            getRoomsUseCase.getRoomsData().collect {
+                _roomsData.value = it
             }
         }
     }

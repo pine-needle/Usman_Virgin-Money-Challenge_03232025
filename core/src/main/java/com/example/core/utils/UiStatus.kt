@@ -1,4 +1,4 @@
-package com.example.domain.utils
+package com.example.core.utils
 
 sealed class UiStatus<out T> {
      data object LOADING: UiStatus<Nothing>()
