@@ -139,9 +139,9 @@ The application addresses the development story requirements as follows:
 
 ## Screenshots
 
-![Screenshot 2](screenshots/ColleagueList.png)
+![Screenshot 2](screenshots/colleaguelist.png)
 
-![Screenshot 1](screenshots/AvailableRooms.png)
+![Screenshot 1](screenshots/availablerooms.png)
 
 
 ## Contact
