@@ -57,6 +57,9 @@ dependencies {
     //viewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    //coil
+    implementation(libs.coil.compose)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity.compose)

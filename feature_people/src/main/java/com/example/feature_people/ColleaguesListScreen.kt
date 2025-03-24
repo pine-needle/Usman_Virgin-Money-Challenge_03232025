@@ -68,6 +68,8 @@ fun ColleaguesListScreen(viewModel: VMViewModel = hiltViewModel()) {
                     val errorMessage = (peopleData as UiStatus.ERROR).message
                     Text("Error loading people: $errorMessage", modifier = Modifier.padding(16.dp))
                 }
+
+                else -> {}
             }
         }
     }

@@ -1,6 +1,9 @@
 package com.example.feature_rooms.widgets
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -21,14 +24,14 @@ fun RoomCard(room: VMRoomsResponseItemModel) {
             .padding(8.dp),
         shape = RoundedCornerShape(10.dp),
         elevation = CardDefaults.elevatedCardElevation(defaultElevation = 4.dp),
-                colors = CardDefaults.cardColors(containerColor = Color(0xFFC40202))
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFC40202))
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Text(
-                text = "Room ID: ${room.id}",
+                text = "Room Number: ${room.id}",
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 color = Color.White
@@ -37,11 +40,11 @@ fun RoomCard(room: VMRoomsResponseItemModel) {
             Text(
                 text = "Max Occupancy: ${room.maxOccupancy}",
                 fontSize = 14.sp,
-                color = Color.Gray
+                color = Color.White
             )
 
             Text(
-                text = "Occupied: ${if (room.isOccupied) "Yes" else "No"}",
+                text = "Status: ${if (room.isOccupied) "OCCUPIED" else "AVAILABLE"}",
                 fontSize = 14.sp,
                 color = Color.White
             )
