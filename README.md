@@ -9,7 +9,7 @@ This Android application is designed to help Virgin Money staff quickly access c
 * **Colleague Directory:**
     * List of all colleagues with basic information.
     * Detailed view of each colleague, including contact details, job title, and other available information.
-    * Display of colleague avatars (with a default image if an avatar is not available).
+    * Display of colleague avatars.
 * **Room Occupancy:**
     * List of all rooms with their current occupancy status (Available/Occupied).
     * Display of room details such as ID and max occupancy.
