@@ -55,9 +55,9 @@ app/
 │   ├── main/
 │   │   ├── AndroidManifest.xml
 │   │   ├── java/
-│   │   │   └── com/example/virginmoneyapp/ // Replace with your package name
+│   │   │   └── com/example/virginmoney/
 │   │   │       ├── MainActivity.kt
-│   │   │       └── MyApplication.kt // Hilt Application
+│   │   │       └── VMAndroidApp.kt // Hilt Application
 │   │   └── res/
 │   │       └── ...
 core/
@@ -140,6 +140,7 @@ The application addresses the development story requirements as follows:
 ## Screenshots
 
 ![Screenshot 2](screenshots/colleaguelist.png)
+
 
 ![Screenshot 1](screenshots/availablerooms.png)
 
