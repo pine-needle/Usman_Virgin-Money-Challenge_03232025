@@ -4,6 +4,13 @@
 
 This Android application is designed to help Virgin Money staff quickly access colleague contact details and view room occupancy status. It was developed as part of the Virgin Money Developer Challenge, adhering to best practices in Android development, code structure, testability, and accessibility. This project utilizes a multi-module architecture to enhance modularity and maintainability.
 
+## Screenshots
+
+<img src="screenshots/colleaguelist.png" alt="colleague list Screenshot" width="300">
+
+<img src="screenshots/availablerooms.png" alt="colleague list Screenshot" width="300">
+
+
 ## Features
 
 * **Colleague Directory:**
@@ -136,12 +143,6 @@ The application addresses the development story requirements as follows:
 1.  Clone the repository.
 2.  Open the project in Android Studio.
 3.  Build and run the application on an Android emulator or device.
-
-## Screenshots
-
-<img src="screenshots/colleaguelist.png" alt="colleague list Screenshot" width="300">
-
-<img src="screenshots/availablerooms.png" alt="colleague list Screenshot" width="300">
 
 
 ## Contact
